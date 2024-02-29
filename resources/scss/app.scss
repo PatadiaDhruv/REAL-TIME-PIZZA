@@ -1,0 +1,47 @@
+@import "./variable";   // "_" nai lagaviye to pan scss samji jase ke a partial file include kari 6
+
+body{
+    font-family: 'lato' , 'sans-serif';
+    -webkit-font-smoohing: antialiased;
+    color: $dark;
+
+   
+    
+}
+
+nav li:last-child a {
+
+    &:hover{
+        background-color: $primary-hover;
+    }
+
+    transition: $smooth;  // color badal va ma smoothness ave atle badhhe point same rakhvanu atle var bnavanu
+
+    background-color: $primary;
+    border-radius: 10px ;
+
+} 
+
+nav li a{
+    &:hover{
+        color: $primary;
+    }
+    
+}
+
+.apnocolor{
+    background-color: $gray;
+    
+}
+
+.add_to_cart{
+    border : $primary 3px solid;
+    border-radius: 20px;
+    color: $primary;
+    
+    &:hover{
+        color:$primary-hover;
+        border : $primary-hover 3px solid;
+    }
+}
+

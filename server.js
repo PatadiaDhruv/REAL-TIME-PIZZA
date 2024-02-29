@@ -7,12 +7,13 @@ const path = require('path');
 const port = process.env.port || 8000   // basicaly agar apde dynamic ke pacchi env variable
 // joi to hoy to a port use karvano karnke badhi vakhte ek port avalable na pan hoy
 
+app.use(express.static('public')) // basicaly a ke 6 ke a badha assest kya agd available 6
 
 app.get('/', (req,res)=>{
 
     
     res.render('home');  // views sudhi no path phelethi define hoy 6 atle sidho a 
-    res.send("hello from server");
+    //res.send("hello from server");
 })
 
 //configure  /  set template engine

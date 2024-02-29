@@ -8,3 +8,5 @@
     On the other hand, res.send is a more general-purpose function that can be used to send any type of response, not necessarily HTML. It can be used to send plain text, JSON, binary data, or any other content type.
 
     The reason you might see res.render being called before res.send is that rendering a view template usually involves processing on the server side, and once the template is rendered, the resulting HTML is sent as a response to the client using res.send. This sequence is common in applications that generate dynamic HTML content on the server before sending it to the client.
+
+3> middle-ware    
