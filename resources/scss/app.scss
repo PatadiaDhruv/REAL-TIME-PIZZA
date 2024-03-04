@@ -9,6 +9,8 @@ body{
     
 }
 
+
+
 nav li:last-child a {
 
     &:hover{
@@ -44,4 +46,70 @@ nav li a{
         border : $primary-hover 3px solid;
     }
 }
+
+.button_design{
+
+    // background-color:$primary;
+    background-color:$primary;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    color: $pure;
+
+    &:hover{
+        background-color: $primary-hover;
+        
+    }
+
+}
+
+.sign_in_design{
+      // background-color:$primary;
+      background-color:$primary;
+      padding: 0.75rem;
+      border-radius: 20px;
+      font-weight: bold;
+      color: $pure;
+  
+      &:hover{
+          background-color: $primary-hover;
+          
+      }
+}
+
+.text_color{
+    color:$primary;
+    &:hover{
+        color:$primary-hover;
+    }
+}
+
+.login_page_background{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    
+    background-color:#ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+a{
+    color: $primary;
+    &:hover{
+        color: $primary-hover;
+    }
+}
+
+
+
+
 

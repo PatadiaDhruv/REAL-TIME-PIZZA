@@ -30,3 +30,56 @@ nav li a:hover {
   color: #b23301;
   border: #b23301 3px solid;
 }
+
+.button_design {
+  background-color: #FE5F1E;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.button_design:hover {
+  background-color: #b23301;
+}
+
+.sign_in_design {
+  background-color: #FE5F1E;
+  padding: 0.75rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.sign_in_design:hover {
+  background-color: #b23301;
+}
+
+.text_color {
+  color: #FE5F1E;
+}
+.text_color:hover {
+  color: #b23301;
+}
+
+.login_page_background {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+a {
+  color: #FE5F1E;
+}
+a:hover {
+  color: #b23301;
+}
