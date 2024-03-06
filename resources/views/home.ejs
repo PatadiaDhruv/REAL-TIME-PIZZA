@@ -22,6 +22,8 @@
 
   <!-- ACTUAL MENU STARTS  -->
   <div name="actual_menu" class="ml-20 grid grid-cols-4 gap-y-20 gap-x-12">
+    <% pizzas.forEach(function(pizza){%>
+
     <!-- CARD 1 -->
     <div>
       <div class="w-64">
@@ -33,15 +35,15 @@
         />
         <div class="text-center">
           <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
+          <h2 class="mb-4 text-lg items-center"><%=pizza.name%></h2>
 
           <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
+            ><%=pizza.size%></span
           >
 
           <div class="flex justify-around items-center mt-4">
             <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
+            <span class="font-bold text-lg">₹ <%=pizza.price%></span>
             <!-- ADD BUTTON  -->
             <button class="add_to_cart">
               <span class="font-bold text-lg mr-2 ml-2">+</span>
@@ -52,214 +54,6 @@
       </div>
     </div>
 
-    <!-- CARD 2 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 5 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 6 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 7 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 8 -->
-    <div>
-      <div class="w-64">
-        <!-- CARD OF ONE PRISE   -->
-        <img
-          src="/img/real_pizza1.png"
-          alt="pizza photo"
-          class="mx-auto h-40 mb-4"
-        />
-        <div class="text-center">
-          <!--SECTION AFTER IMAGE (TEXT,NAME,ADD BUTTON, PRISE SECTION) -->
-          <h2 class="mb-4 text-lg items-center">Margerita</h2>
-
-          <span class="apnocolor py-1 px-4 rounded-full uppercase text-xs"
-            >small</span
-          >
-
-          <div class="flex justify-around items-center mt-4">
-            <!--SECTION  OF PRISE AND ADD BUTTON-->
-            <span class="font-bold text-lg">₹249</span>
-            <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
-              <span class="font-bold text-lg mr-2 ml-2">+</span>
-              <span class="font-bold text-lg ml-2 mr-2">Add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <% }) %>
   </div>
 </section>

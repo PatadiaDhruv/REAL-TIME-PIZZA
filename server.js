@@ -1,8 +1,41 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
-const expressLayouts = require('express-ejs-layouts')
+const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
+const mongoose = require('mongoose');
+
+
+// 
+
+//DB CONNECTION
+
+const url = 'mongodb://127.0.0.1:27017/pizza';   //
+// mongoose.connect(url,{useNewUrlParser: true, useCreateIndex:true , useUnifiedTopology:true,useFindAndModify:true});
+
+// const connection = mongoose.connection;
+// connection.once('open',() => {
+//     console.log('Database connected...')
+// }).catch(err =>{
+//     console.log('Connection Failed..')
+// });
+
+
+mongoose.connect(url).
+  catch(error => handleError(error));
+
+// Or:
+try {
+  mongoose.connect('mongodb://127.0.0.1:27017/pizza');
+   console.log("connection Done");
+} catch (error) {
+  handleError(error);
+}
+
+
+
+// _______________________________________________________________________________________________________________________
+
 
 const port = process.env.port || 8000   // basicaly agar apde dynamic ke pacchi env variable
 // joi to hoy to a port use karvano karnke badhi vakhte ek port avalable na pan hoy
@@ -16,38 +49,7 @@ app.set ('views',path.join(__dirname , '/resources/views'))
 app.set ('view engine','ejs')
 // routes karta phela j av vu joi a
 
-
-app.get('/', (req,res)=>{
-
-    
-    res.render('home');  // views sudhi no path phelethi define hoy 6 atle sidho a 
-    //res.send("hello from server");
-})
-
-app.get('/cart', (req,res)=>{
-
-    
-    res.render('customer/cart');  // views sudhi no path phelethi define hoy 6 atle sidho a 
-    //res.send("hello from server");
-})
-
-app.get('/login', (req,res)=>{
-
-    
-    res.render('auth/login');  // views sudhi no path phelethi define hoy 6 atle sidho a 
-    //res.send("hello from server");
-})
-
-
-app.get('/register', (req,res)=>{
-
-    
-    res.render('auth/register');  // views sudhi no path phelethi define hoy 6 atle sidho a 
-    //res.send("hello from server");
-})
-
-
-
+require('./routes/web')(app) //routes moved to routes/web.js, From there function call routes are connected
 
 
 app.listen(port,()=>{

@@ -1,0 +1,25 @@
+[
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba1" }, "name": "VeggieSupreme", "image": "pizza.png", "price": 250, "size": "medium" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba2" }, "name": "MediterraneanDelight", "image": "pizza.png", "price": 300, "size": "large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba3" }, "name": "Spinach_and_Feta_Fantasy", "image": "pizza.png", "price": 220, "size": "small" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba4" }, "name": "ClassicMargherita", "image": "pizza.png", "price": 280, "size": "medium" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba5" }, "name": "VeggieExtravaganza", "image": "pizza.png", "price": 350, "size": "extra_large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba6" }, "name": "Cheese_and_Tomato_Bliss", "image": "pizza.png", "price": 270, "size": "large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba7" }, "name": "Broccoli_and_Mushroom_Delight", "image": "pizza.png", "price": 230, "size": "medium" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba8" }, "name": "VeganBBQFeast", "image": "pizza.png", "price": 320, "size": "extra_large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654ba9" }, "name": "Tomato_and_Olive_Garden", "image": "pizza.png", "price": 260, "size": "small" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b10" }, "name": "Pesto_Pleasure", "image": "pizza.png", "price": 290, "size": "large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b11" }, "name": "Spicy_Veggie_Delight", "image": "pizza.png", "price": 240, "size": "medium" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b12" }, "name": "Artichoke_and_Sundried_Tomato", "image": "pizza.png", "price": 310, "size": "extra_large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b13" }, "name": "Four_Cheese_Fiesta", "image": "pizza.png", "price": 280, "size": "large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b14" }, "name": "Zesty_Pepper_and_Onion", "image": "pizza.png", "price": 250, "size": "small" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b15" }, "name": "Garlic_and_Herb_Heaven", "image": "pizza.png", "price": 320, "size": "medium" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b16" }, "name": "Mushroom_Marvel", "image": "pizza.png", "price": 270, "size": "extra_large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b17" }, "name": "Crispy_Cauliflower_Crunch", "image": "pizza.png", "price": 230, "size": "large" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b18" }, "name": "Tomato_and_Basil_Blast", "image": "pizza.png", "price": 340, "size": "medium" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b19" }, "name": "Veggie_Surprise", "image": "pizza.png", "price": 290, "size": "small" },
+  { "_id": { "$oid": "5eeabca78ef098dcba654b20" }, "name": "Pumpkin_Palooza", "image": "pizza.png", "price": 360, "size": "extra_large" }
+]
+
+  
+   

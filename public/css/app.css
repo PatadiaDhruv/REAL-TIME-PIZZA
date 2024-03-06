@@ -41,6 +41,7 @@ nav li a:hover {
 }
 .button_design:hover {
   background-color: #b23301;
+  color: #fff;
 }
 
 .sign_in_design {
