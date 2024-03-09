@@ -8,6 +8,12 @@
 /***/ (() => {
 
 console.log("hello from Shri Hari");
+var addToCart = document.querySelectorAll('.add_to_cart');
+addToCart.forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    console.log(e);
+  });
+});
 
 /***/ }),
 
