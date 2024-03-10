@@ -46,6 +46,11 @@ const port = process.env.port || 8000   // basicaly agar apde dynamic ke pacchi 
 // joi to hoy to a port use karvano karnke badhi vakhte ek port avalable na pan hoy
 
 app.use(express.static('public')) // basicaly a ke 6 ke a badha assest kya agd available 6
+app.use(express.json())
+
+
+
+
 
 
 //sesion store
@@ -69,6 +74,13 @@ app.use(session({
   // saveUninitialized: true,
   cookie: { maxAge: 1000 * 60 * 60 * 24 } // 24 hours
 }));
+
+// Global session
+app.use((req,res,next)=>{
+  res.locals.session=req.session
+  
+  next()
+})
 
 
 app.use(flash())  // session will generate from this

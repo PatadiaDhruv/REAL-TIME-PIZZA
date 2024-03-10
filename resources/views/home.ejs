@@ -45,7 +45,7 @@
             <!--SECTION  OF PRISE AND ADD BUTTON-->
             <span class="font-bold text-lg">₹ <%=pizza.price%></span>
             <!-- ADD BUTTON  -->
-            <button class="add_to_cart">
+            <button class="add_to_cart" data-pizza="<%= JSON.stringify(pizza)%>">
               <span class="font-bold text-lg mr-2 ml-2">+</span>
               <span class="font-bold text-lg ml-2 mr-2">Add</span>
             </button>
@@ -53,6 +53,7 @@
         </div>
       </div>
     </div>
+    
 
     <% }) %>
   </div>

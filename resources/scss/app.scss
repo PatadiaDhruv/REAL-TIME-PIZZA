@@ -1,5 +1,8 @@
 @import "./variable";   // "_" nai lagaviye to pan scss samji jase ke a partial file include kari 6
 
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
+
 body{
     font-family: 'lato' , 'sans-serif';
     -webkit-font-smoohing: antialiased;
@@ -44,6 +47,10 @@ nav li a{
     &:hover{
         color:$primary-hover;
         border : $primary-hover 3px solid;
+    }
+
+    &:focus{
+        outline: none;
     }
 }
 
@@ -108,6 +115,11 @@ a{
     &:hover{
         color: $primary-hover;
     }
+}
+
+.noty_theme__mint{
+    border-radius: 50px!important;
+    padding-left: 8px!important;
 }
 
 

@@ -41,8 +41,13 @@
           <li class="ml-6"><a href="/register">Registration</a></li>
           <li class="ml-6"><a href="/login">Login</a></li>
           <li class="ml-6">
-            <a href="/cart" id="cart" class="inline-block px-1 py-1 mr-6"
-              ><img
+            <a href="/cart" id="cart" class="inline-block flex px-1 py-1 mr-6">
+              <span id="cartCounter" class="font-medium ml-1 mr-2"
+                ><%= session.cart ? session.cart.totalQty : ''%></span
+              >
+
+              <!-- <%= session.cart ? session.cart.totalQty : ''%> -->
+              <img
                 src="/img/cart.png"
                 alt="cart-image"
                 height="25rem"
